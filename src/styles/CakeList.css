@@ -1,0 +1,29 @@
+.checklist-container {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0;
+    justify-content: center;
+  }
+  
+  .checklist-button {
+    padding: 8px 16px;
+    background-color: #f7f7f7;
+    border: 2px solid #d4d4d4;
+    border-radius: 20px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .checklist-button.active {
+    background-color: #e8b020;
+    border-color: #d4a020;
+    color: #fff;
+  }
+  
+  .checklist-button:hover {
+    background-color: #f0c040;
+    border-color: #e8b020;
+    color: #fff;
+  }
+  

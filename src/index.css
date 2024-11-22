@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Food Item Styling */
+.food-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+  transform: translateY(-5px); /* Slight hover effect for interactivity */
+}
+
+.food-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-item h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.food-item p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Button Styling */
+button.active {
+  background-color: #f0a500;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ff5722; /* Orange color for food-related buttons */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Food Category Filter Styling */
+.checklist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.checklist-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  color: #333;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.checklist-button:hover {
+  background-color: #f0c14b; /* Highlight on hover for buttons */
+  color: #fff;
+}
+
+.checklist-button.active {
+  background-color: #f0a500; /* Active button style for selected category */
+  color: white;
+  border-color: #a88734;
+}
+
+/* Food List Layout */
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-links a {
+  color: #d3d3d3;
+  text-decoration: none;
+  margin: 5px 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  color: #ff4081; /* Pink hover effect for links */
+}

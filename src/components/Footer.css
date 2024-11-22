@@ -1,0 +1,86 @@
+footer {
+  background-color: #222;
+  color: #f1f1f1;
+  padding: 20px 10px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adjusted gap for a more consistent look */
+}
+
+.footer-main-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px; /* Adjusted gap between links */
+  margin-bottom: 20px; /* Increased margin for better separation */
+}
+
+.footer-links,
+.footer-contact,
+.social-links {
+  flex: 1;
+  min-width: 160px; /* Slightly larger minimum width for better responsiveness */
+}
+
+footer h3 {
+  font-size: 20px; /* Increased heading size for emphasis */
+  font-weight: bold;
+  margin-bottom: 15px; /* Increased margin */
+  color: #f1f1f1;
+}
+
+.footer-links a,
+.social-links a {
+  color: #d3d3d3;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 15px; /* Increased font size for readability */
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+  color: #ff4081;
+}
+
+.footer-contact p {
+  font-size: 14px; /* Increased contact detail size for clarity */
+  color: #cccccc;
+  margin: 5px 0;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px; /* Slightly larger text for general footer content */
+}
+
+footer .social-links a {
+  font-size: 18px; /* Increased font size for social links */
+  margin: 0 10px;
+}
+
+footer .social-links a:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .footer-main-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links a {
+    font-size: 16px; /* Larger text for mobile screens */
+  }
+}

@@ -1,0 +1,68 @@
+/* General Styling */
+.homepage {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: #c0392b;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+.carousel-section .carousel-item {
+  position: relative;
+}
+
+.carousel-section .carousel img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.carousel-section .carousel-overlay {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+
+.special-offers {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.special-offers h2 {
+  font-size: 2rem;
+  color: #27ae60;
+}
+
+.special-offers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.special-offers li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #2c3e50;
+}

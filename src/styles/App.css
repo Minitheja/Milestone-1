@@ -1,0 +1,288 @@
+/* General Body and Layout */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #ff6584; /* Bright pink for nav */
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: #333; /* Dark footer */
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Food Item Card */
+.food-item {
+  border: 1px solid #ddd;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.contact-form p {
+  text-align: center;
+  font-size: 16px;
+  color: #4CAF50;
+}
+
+/* Checklist Button Styling */
+.checklist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.checklist-button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  color: #333;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.checklist-button:hover {
+  background-color: #f0c14b;
+  color: #fff;
+}
+
+.checklist-button.active {
+  background-color: #f0c14b;
+  color: #fff;
+  border-color: #a88734;
+}
+
+/* Food List Styling */
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.food-item {
+  flex: 1 0 21%; /* 4 items per row */
+  max-width: 25%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .food-item {
+    flex: 1 0 45%; /* 2 items per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .food-item {
+    flex: 1 0 100%; /* 1 item per row on very small screens */
+  }
+}
+
+/* Navbar Styling */
+nav {
+  background-color: #ff6584; /* Pink */
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav div {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #ffd700; /* Gold on hover */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #d3d3d3;
+  text-decoration: none;
+  margin: 3px 0;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff4081; /* Soft pink hover effect */
+}
+
+footer .social-links a {
+  font-size: 16px;
+  margin: 0 8px;
+}
+
+footer .social-links a:hover {
+  color: #ffd700; /* Gold hover effect */
+}
+
+footer p {
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+  }
+}
+
+
+
+
+.login-page {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form .error {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
