@@ -19,7 +19,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
       {cartItems.length === 0 ? (
         <div>
           <p>Your cart is empty.</p>
-          <button onClick={() => navigate('/foodlist')}>Go to Food List</button>
+          <button onClick={() => navigate('/food-list')}>Go to Food List</button>
         </div>
       ) : (
         <div>

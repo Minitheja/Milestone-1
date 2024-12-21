@@ -203,9 +203,7 @@ footer h3 {
   transition: color 0.3s;
 }
 
-.footer-links a:hover {
-  color: #ff4081; /* Soft pink hover effect */
-}
+
 
 footer .social-links a {
   font-size: 16px;
